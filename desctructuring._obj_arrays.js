@@ -1,6 +1,9 @@
 /** @format */
 
-// OBJECT
+/*
+OBJECT;
+
+*/
 let payload = { cantante: "Luis" };
 
 const post = "doctor";
@@ -12,7 +15,11 @@ const { cantante } = payload;
 
 console.log(cantante);
 
-// ARRAY;
+/*
+ARRAY;
+
+*/
+
 let payload2 = [];
 
 let l1 = [1, 2];

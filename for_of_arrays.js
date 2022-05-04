@@ -14,4 +14,4 @@ let array2 = [
 
 for (property of array2) {
   console.log("property of array2", property);
-}
+} // { amigo: "Luis", hermano: "Jesus" }, { amigo: "Luis", hermano: "Jesus" }
