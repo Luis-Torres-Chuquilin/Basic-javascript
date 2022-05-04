@@ -1,34 +1,31 @@
 /** @format */
 
+// OBJECT -  for in
 let object = { amigo: "Luis", hermano: "Jesus" };
-let object2 = [
-  { amigo: "Luis", hermano: "Jesus" },
-  { amigo: "Luis", hermano: "Jesus" },
-];
 
-let array = ["2", "madre mia", 343];
-
-console.log("object typeof", typeof object);
-console.log("object2 typeof", typeof object2);
-console.log("array typeof", typeof array);
 for (property in object) {
-  console.log(property);
+  console.log("property in object", property);
 } // amigo , hermano
 
-try {
-  for (property of object2) {
-    console.log(property);
-  }
-} catch (e) {
-  console.log("Error object is not iterable");
-}
-//
+// ARRAY
+let array = ["2", "madre mia", 343];
 
-console.log("ARRAY");
 for (property of array) {
   console.log(property);
 } // 2 ,  madre mia , 343
 
+let array2 = [
+  { amigo: "Luis", hermano: "Jesus" },
+  { amigo: "Luis", hermano: "Jesus" },
+];
 for (property in array) {
   console.log(property);
 } // 0 , 1 , 2
+
+for (property of array2) {
+  console.log("property of array2", property);
+}
+
+for (property in array2) {
+  console.log("property in array2", property);
+} // 0 , 1
